@@ -1,0 +1,22 @@
+name: workflow for staging
+
+on: push
+
+jobs:
+  job1:
+    name: First job to run
+    runs-on: ubuntu-latest
+    steps: 
+      - name: step 1
+        uses: actions/checkout@v4
+      - name: step 2
+        run: ls -la
+  job2: 
+    name: second to job to run
+    runs-on: windows latest
+    steps:
+      - name: step one of j2
+        uses: actions/checkout@v4
+      - name: step 2 of j2
+        run: ls
+        
