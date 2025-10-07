@@ -13,7 +13,7 @@ jobs:
         run: ls -la
   job2: 
     name: second to job to run
-    runs-on: windows latest
+    runs-on: windows-latest
     steps:
       - name: step one of j2
         uses: actions/checkout@v4
